@@ -10,7 +10,7 @@ Route::prefix('api')->group(function () {
     Route::get('/workload', 'WorkloadController@index')->name('horizon.workload.index');
 
     // Workload Queues...
-    Route::get('/queues/{id}', 'QueueController@index')->name('horizon.queue.show');
+    Route::get('/queues/{id}', 'QueueController@show')->name('horizon.queue.show');
 
     // Master Supervisor Routes...
     Route::get('/masters', 'MasterSupervisorController@index')->name('horizon.masters.index');

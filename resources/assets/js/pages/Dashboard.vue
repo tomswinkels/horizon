@@ -221,7 +221,7 @@
                         <tbody>
                         <tr v-for="queue in workload">
                             <td>
-                                <span><router-link :to="{ name: 'queue.detail', params: { type: 'queues', slug: queue.id }}">{{ queue.name }}</router-link></span>
+                                <span><router-link :to="{ name: 'queue.detail', params: { slug: queue.name }}">{{ queue.name }}</router-link></span>
                             </td>
                             <td>{{ queue.processes }}</td>
                             <td>{{ queue.length }}</td>

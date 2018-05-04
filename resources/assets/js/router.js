@@ -77,7 +77,7 @@ export default new Router({
             props: true,
         },
         {
-            path: '/queue/:queueId',
+            path: '/queue/:slug',
             name: 'queue.detail',
             component: require('./pages/Queue/Queue.vue'),
             props: true,
