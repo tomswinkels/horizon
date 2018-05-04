@@ -76,5 +76,11 @@ export default new Router({
             component: require('./pages/Failed/Job.vue'),
             props: true,
         },
+        {
+            path: '/queue/:queueId',
+            name: 'queue.detail',
+            component: require('./pages/Queue/Queue.vue'),
+            props: true,
+        },
     ],
 })
